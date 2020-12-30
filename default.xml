@@ -507,4 +507,6 @@
 
   <include name="snippets/cm.xml" />
 
+  <include name="Z01M.xml" />
+
 </manifest>

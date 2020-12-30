@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote name="github" fetch="https://github.com"/>
+
+  <project path="device/asus/Z01M" name="Seplx/android_device_asus_Z01M" remote="github" revision="cm-14.1"/>
+  <project path="kernel/asus/Z01M" name="Seplx/android_kernel_asus_Z01M" remote="github" revision="cm-14.1"/>
+  <project path="vendor/asus/Z01M" name="Seplx/android_vendor_asus_Z01M" remote="github" revision="cm-14.1"/>
+
+</manifest>
