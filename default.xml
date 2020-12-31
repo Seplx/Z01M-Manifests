@@ -509,5 +509,4 @@
 
   <include name="Z01M.xml" />
   <include name="remove.xml" />
-
 </manifest>
