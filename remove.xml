@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="github"
+           fetch=".."
+           review="review.lineageos.org" />
+
+<!-- START OF UNNECESSARY REPO REMOVAL -->
+	<remove-project name="device/generic/goldfish" />
+	<remove-project name="device/generic/goldfish-opengl" />
+	<remove-project name="device/generic/mini-emulator-arm64" />
+	<remove-project name="device/generic/mini-emulator-armv7-a-neon" />
+	<remove-project name="device/generic/mini-emulator-x86" />
+	<remove-project name="device/generic/mini-emulator-x86_64" />
+	<remove-project name="device/generic/qemu" />
+	<remove-project name="LineageOS/android_prebuilts_gcc_darwin-x86_aarch64_aarch64-linux-android-4.9" />
+	<remove-project name="LineageOS/android_prebuilts_gcc_darwin-x86_arm_arm-linux-androideabi-4.9" />
+	<remove-project name="LineageOS/android_prebuilts_gcc_darwin-x86_x86_x86_64-linux-android-4.9" />
+	<remove-project name="LineageOS/cm_crowdin" />
+	<remove-project name="LineageOS/contributors-cloud-generator" />
+	<remove-project name="LineageOS/cve_tracker" />
+	<remove-project name="LineageOS/hudson" />
+	<remove-project name="LineageOS/lineage_wiki" />
+	<remove-project name="LineageOS/mirror" />
+	<remove-project name="LineageOS/scripts" />
+	<remove-project name="LineageOS/slackbot" />
+	<remove-project name="LineageOS/www" />
+	<remove-project name="platform/prebuilts/clang/darwin-x86/host/3.6" />
+	<remove-project name="platform/prebuilts/clang/host/darwin-x86" />
+	<remove-project name="platform/prebuilts/gcc/darwin-x86/arm/arm-eabi-4.8" />
+	<remove-project name="platform/prebuilts/gcc/darwin-x86/host/i686-apple-darwin-4.2.1" />
+	<remove-project name="platform/prebuilts/gdb/darwin-x86" />
+	<remove-project name="platform/prebuilts/go/darwin-x86" />
+	<remove-project name="platform/prebuilts/ninja/darwin-x86" />
+	<remove-project name="platform/prebuilts/python/darwin-x86/2.7.5" />
+	<remove-project name="platform/prebuilts/qemu-kernel" />
+<!-- END OF UNNECESSARY REPO REMOVAL -->
+
+
+  <include name="dependencies.xml" />
+
+</manifest>
+ 
