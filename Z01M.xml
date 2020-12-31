@@ -10,4 +10,5 @@
   <project path="vendor/asus/Z01M" name="Seplx/proprietary_vendor_asus_Z01M" remote="github" revision="cm-14.1"/>
 
   <include name="dependencies.xml" />
+  
 </manifest>

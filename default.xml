@@ -508,5 +508,7 @@
   <include name="snippets/cm.xml" />
 
   <include name="Z01M.xml" />
+  <include name="dependencies.xml" />
   <include name="remove.xml" />
+  
 </manifest>

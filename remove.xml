@@ -36,7 +36,5 @@
 	<remove-project name="platform/prebuilts/qemu-kernel" />
 <!-- END OF UNNECESSARY REPO REMOVAL -->
 
-
-  <include name="dependencies.xml" />
 </manifest>
  
