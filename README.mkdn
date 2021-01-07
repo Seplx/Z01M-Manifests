@@ -28,14 +28,18 @@ Make sure that you are inside the LineageOS source code root.
 If you don't know which one to pick, [see](https://source.android.com/setup/build/building#choose-a-target)
 I'm choosing the userdebug one so I do.
 
-    brunch lineage_Z01M-userdebug
+    lunch lineage_Z01M-userdebug
+
+#### And build
+
+    mka
 
 You can also use the -j option (eg. -j1 or -j4) to specify how much parallel tasks you want to use.
 If you don't provide a -j argument, the build system automatically selects a parallel task count that it thinks is optimal for your system.
 
 So an example of that looks like.
 
-    brunch lineage_Z01M-userdebug -j3
+    mka -j3
 
 ### The build should be located somewhere in out/target/product/Z01M/ in The LineageOS code root.
 
