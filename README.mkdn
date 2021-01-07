@@ -17,29 +17,40 @@ Then to sync up:
 # Building
 Make sure that you are inside the LineageOS source code root.
 
-## Prepare the build environment
+## Prepare the build environment:
     source build/envsetup.sh
 
-#### Select one of these build variants
+#### Select one of these build variants:
     lineage_Z01M-userdebug
     lineage_Z01M-user
     lineage_Z01M-eng
 
 If you don't know which one to pick, [see](https://source.android.com/setup/build/building#choose-a-target)
-I'm choosing the userdebug one so I do.
+I'm choosing the userdebug one so I do:
 
-    lunch lineage_Z01M-userdebug
+    breakfast Z01M
+
+##### breakfast assumes the build variant to be userdebug and then "lunches" the device name with some other useful commands, if you want to build a "user" build you would do:
+
+    breakfast lineage_Z01M-user
 
 #### And build
 
-    mka
+    brunch Z01M
 
-You can also use the -j option (eg. -j1 or -j4) to specify how much parallel tasks you want to use.
+##### Keep in mind that brunch also runs the 'breakfast' function and runs 'mka bacon' right after that which starts the build and also builds a flashable zip, so you could just run
+
+    brunch lineage_Z01M-user
+
+##### and you would run a user build right away. For more detail inspect [this code](https://github.com/LineageOS/android_vendor_cm/blob/cm-14.1/build/envsetup.sh)
+
+If you don't use brunch, but run 'mka bacon' manually you can also use the -j option (eg. -j1 or -j4) to specify how much parallel tasks you want to use.
 If you don't provide a -j argument, the build system automatically selects a parallel task count that it thinks is optimal for your system.
+You cannot use the -j argument with the 'brunch' function.
 
-So an example of that looks like.
+So an example of that looks like:
 
-    mka -j3
+    mka bacon -j3
 
 ### The build should be located somewhere in out/target/product/Z01M/ in The LineageOS code root.
 
