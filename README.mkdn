@@ -12,7 +12,7 @@ Clone this repository with this command:
 
 Then to sync up:
 
-    repo sync
+    repo sync -c --no-tags --no-clone-bundle -j$(nproc --all)
 
 # Building
 Make sure that you are inside the LineageOS source code root.
